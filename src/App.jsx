@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <h1>This is amazing grace i love Gauri </h1>
+      <h1>I am a developer </h1>
     </>
   )
 }
