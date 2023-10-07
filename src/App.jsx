@@ -1,16 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { createContext } from "react";
+import ComA from "./ComA"
+import Data from "./Data"
 
-function App() {
-  const [count, setCount] = useState(0)
+const FirstName = createContext();
 
-  return (
+const App = () =>{
+  return(
     <>
-      <h1>This is amazing grace i love Gauri </h1>
+    <FirstName.Provider 
+      value={Data[0].firstName}
+      lastName={Data[0].lastName}
+      phone={Data[0].phone}
+      email={Data[0].email}
+    >
+      <ComA/>
+    </FirstName.Provider>
+    
     </>
   )
-}
+};
 
-export default App
+export default App;
+export {FirstName};
