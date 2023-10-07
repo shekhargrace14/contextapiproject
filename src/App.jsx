@@ -7,12 +7,7 @@ const FirstName = createContext();
 const App = () =>{
   return(
     <>
-    <FirstName.Provider 
-      value={Data[0].firstName}
-    >
-      <ComA/>
-    </FirstName.Provider>
-    
+      <h1>This is amazing grace i love Gauri </h1>
     </>
   )
 };
