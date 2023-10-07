@@ -1,16 +1,14 @@
-import React, { createContext } from "react";
+import React from "react";
 import ComA from "./ComA"
-import Data from "./Data"
 
-const FirstName = createContext();
+
 
 const App = () =>{
   return(
     <>
-      <h1>This is amazing grace i love Gauri </h1>
+        <ComA/>
     </>
   )
 };
 
 export default App;
-export {FirstName};

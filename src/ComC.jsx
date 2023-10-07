@@ -1,17 +1,11 @@
-import React from "react";
-import {FirstName} from './App'
+// import React from "react";
+import {useGlobalContext} from './Context'
 const ComC = () =>{
+  const firstName = useGlobalContext();
+
   return(
     <>
-        <FirstName.Consumer>{(FirstName)=>{
-            return (
-                <>
-                    <h1>Hello, My name is {FirstName} </h1>;
-                </>
-            )
-        }} 
-        </FirstName.Consumer>
-      
+      <h1>Hello, My name is {firstName} </h1>
     </>
   )
 };
