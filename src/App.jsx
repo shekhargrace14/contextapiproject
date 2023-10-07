@@ -1,14 +1,11 @@
-import React from "react";
-import ComA from "./ComA"
-
-
-
-const App = () =>{
-  return(
-    <>
-        <ComA/>
-    </>
+// import React from 'react'
+import Component from './Component'
+const App = () => {
+  return (
+    <div>
+        <Component/>
+    </div>
   )
-};
+}
 
-export default App;
+export default App
